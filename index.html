@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Admission Form</h2>
+    <div class="container">
+        <form action="">
+            <h4>Personal Info</h4>
+            <input type="text" name="fname" class="inline" placeholder="First Name" required>
+            <input type="text" name="lname" class="inline" placeholder="Last Name" required>
+            <br>
+            <input type="email" name="email" class="inline" placeholder="Email ID">
+            <input type="tel" name="phone" class="inline" placeholder="Phone Number" required>
+            <br>
+            <input type="date" name="date" class="inline" required>
+            <select name="gender" class="inline">
+                <option selected disabled>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <textarea name="address" placeholder="Address"></textarea>
+            <h4>Education Info</h4>
+            <select name="degree">
+                <option selected disabled>Select Degree</option>
+                <option >b.tech</option>
+                <option>M.C.A.</option>
+                <option >B.SC</option>
+                <option>M.B.A.</option>
+            </select>
+            <input type="text" name="cname" placeholder="College Name">
+            <input type="number" name="yog" placeholder="year of graduation" min="2010" max="2022">
+            <input type="number" name="per" placeholder="Percentage" min="0" max="100" step="0.1">
+            <input type="file" name="files">
+            <hr>
+            <input type="Submit" name="submit" value="Submit" class="inline">
+            <input type="reset" name="reset" value="Reset" class="inline">
+        </form>
+    </div>
+</body>
+
+</html>
